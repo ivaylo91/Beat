@@ -15,4 +15,3 @@ export default class Beat extends EventEmitter{
         this.emit(Beat.events.BIT);
     }
 }
-
