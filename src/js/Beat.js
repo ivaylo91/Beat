@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-export default class Beat {
-  static get events() {
-    return {
-      BIT: "bit",
-    };
-  }
-
-  constructor() {
-    setInterval(() => {
-      console.log("bit");
-    }, 600);
-  }
-}
-=======
 import EventEmitter from "eventemitter3";
 
 export default class Beat extends EventEmitter{
@@ -30,4 +15,4 @@ export default class Beat extends EventEmitter{
         this.emit(Beat.events.BIT);
     }
 }
->>>>>>> master
+
