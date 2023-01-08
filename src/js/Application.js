@@ -14,12 +14,13 @@ export default class Application extends EventEmitter {
     const lyrics = ["Ah", "ha", "ha", "ha", "stayin' alive", "stayin' alive"];
     let count = 0;
 
-    const message = document.createElement("div");
-    message.classList.add("message");
-    message.innerText = "Ah";
+    _create(lyric)
+    {
+      const message = document.createElement("div");
+      message.classList.add("message");
+      message.innerText = lyric;
 
-    document.querySelector(".main").appendChild(message);
-
-    this.emit(Application.events.READY);
+      document.querySelector(".main").appendChild(message);
+    }
   }
 }
